@@ -27,7 +27,7 @@ header {
 }
 
 .header-menu {
-    margin-left: 100px;
+    margin-left: 5%;
     padding-bottom: 5px;
     display: flex;
     gap: 29px;
@@ -58,14 +58,16 @@ a {
     padding-right: 110px;
 }
 main {
+    max-width: 100%;
     background-color: #222222;
     display: flex;
     flex-direction: row;
-    padding-left: 161px;
+    padding-left: 9%;
     justify-content: space-between;
 }
 .main-screen{
     margin-top: -80px;
+    width: 43%;
     z-index: 1000;
 }
 .main-text {
@@ -363,4 +365,87 @@ footer {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+@media screen and (max-width: 1600px) {
+    body{align-items: center;}
+    header {
+        padding: 20px 0px 20px 0px;
+        width: 100vw;
+        justify-content: center;
+    }
+    main{     padding-left: 5vw;
+        padding-right: 0vw;
+        width: 95vw;
+        padding-bottom: 20px;}
+    .middle-section {
+        width: 100vw;
+        justify-content: center;
+    }
+    .main-screen{
+        margin-top: 0px;
+        width: 43%;
+        z-index: 1;
+    }
+    .remove1600{
+        display: none;
+    }
+    footer{
+        padding: 0px 5vw;
+        width: 90vw;
+    }
+    .form-section h1{
+        font-size: 50px;
+        margin-top: 0px;
+    }
+    .form-section{align-items: center;
+        justify-content: center;
+        padding: 0px;
+        width: 80vw;
+    }
+    .form-text{ justify-content: center;
+        padding: 20px 5vw;
+        width: 100%;
+    }
+    .form-images {
+        display: none;
+    }
+    .bottom-section{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 1077px) {
+    .main-screen{
+ display: none;
+    }
+    main{
+        justify-content: center;
+    }
+    .main-text {
+        padding-top: 0px;
+        max-width: 100%;
+    } 
+    .main-text h1{
+        text-align: center;
+    } 
+    .main-text h2{
+        text-align: center;
+    } 
+    .main-list {
+        align-self: center;
+        padding: 0px 5vw;
+        justify-content: center;
+        width: fit-content;
+    }
+    main .main-button{
+        align-self: center;
+    }
+    .footer-line_first{
+        align-items: flex-end;
+    }
+    .footer-button {
+        width: 100%;
+        padding: 3px 6px;
+        font-size: 20px;
+    }
 }
