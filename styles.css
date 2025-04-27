@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+body {
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #282829;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: left;
+    padding-left: 162px;
+    padding-top: 44px;
+    background-color: #222222;
+}
+
+.header-menu {
+    margin-left: 100px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 29px;
+    align-items: center;
+    font-size: 16px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.04em; /* 4% в единицах em */
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header-menu a:hover {
+    text-decoration: none;
+    color: inherit;
+    color: darkgray;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 100%;
+    padding-right: 110px;
+}
+main {
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    padding-left: 161px;
+    justify-content: space-between;
+}
+.main-screen{
+    margin-top: -80px;
+    z-index: 1000;
+}
+.main-text {
+    padding-top: 150px;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    margin: 0px;
+    margin-top: 92px;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 120%;
+}
+h2 {
+    margin: 0px;
+    margin-top: 18px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: Arial;
+}
+.main-list {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .list-item {
+    background-color: rgba(40, 40, 41, .7);
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    width: fit-content;
+    padding-right: 20px;
+  }
+  .list-item_big-text {
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: 0.04rem;
+  }
+  .list-item img {
+    margin-right: 20px;
+}
+.main-button {
+    width: fit-content;
+    margin-top: 40px;
+    padding: 32px 50px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222222;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.main-button:hover {
+    background-color: #222222;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+}
+.main-button:active {
+    background-color: #181818;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+}
